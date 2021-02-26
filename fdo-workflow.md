@@ -5,7 +5,7 @@ With [openDS basic structure](https://github.com/hardistyar/openDS-schemas/blob/
 ![workflow](PID-workflow.png)
 
 1. Agent (human or machine) encounters a FAIR Digital Object (FDO): 
-[20.5000.1025/64ae0cf0dacb7bd20ba5](hdl.handle.net/http://hdl.handle.net/api/handles/20.5000.1025/64ae0cf0dacb7bd20ba5) 
+[20.5000.1025/64ae0cf0dacb7bd20ba5](http://hdl.handle.net/api/handles/20.5000.1025/64ae0cf0dacb7bd20ba5) 
 
 (these PIDs could be present in publications, specimen refinery pipeline or a data aggregator landing page) 
 
