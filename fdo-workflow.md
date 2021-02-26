@@ -7,7 +7,7 @@ With [openDS basic structure](https://github.com/hardistyar/openDS-schemas/blob/
 1. Agent (human or machine) encounters a FAIR Digital Object (FDO): 
 [20.5000.1025/64ae0cf0dacb7bd20ba5](hdl.handle.net/http://hdl.handle.net/api/handles/20.5000.1025/64ae0cf0dacb7bd20ba5) 
 
-(these PIDs could be present in publications, specimen refineary pipeline, or a data aggregaor landing page) 
+(these PIDs could be present in publications, specimen refinery pipeline or a data aggregator landing page) 
 
 2. Agent sends the PID to a PID service (Global DOI/Handle system with local resolvers, backups, mirrors)
 
