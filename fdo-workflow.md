@@ -39,7 +39,7 @@ Such as type information.
 **NOTE** should this be done on step 3 or 4? 
 
 is the communication now happening between agent and cordra? Or cordra and Handle system? 
-For example, Cordra can query the DTR using a PID. 21.T11148/4ac7431c2616a213481e which is a PID-BasicInfoType 
+For example, Cordra can query the DTR using a PID. (21.T11148/4ac7431c2616a213481e)[http://hdl.handle.net/21.T11148/4ac7431c2616a213481e] which is a PID-BasicInfoType 
 (see https://github.com/hardistyar/openDS-schemas/blob/main/pid-info-types.md) 
 
 7. Cordra accesses the DTR for Type information 
