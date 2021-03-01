@@ -55,5 +55,5 @@ For example, Cordra can query the DTR using a PID. For example [21.T11148/4ac743
 
 ### Further reading and other examples 
 
-- [https://gitlab.gwdg.de/uschwar1/activities-in-a-pid-architecture](Activities in a pid architecture) by Ulrich Schwardmann (includes diagrams that show the main foreground and background activities in a PID architecture)
+- [Activities in a pid architecture](https://gitlab.gwdg.de/uschwar1/activities-in-a-pid-architecture) by Ulrich Schwardmann includes diagrams that show the main foreground and background activities in a PID architecture. 
 
