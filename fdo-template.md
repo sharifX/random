@@ -1,6 +1,6 @@
 Source: https://fairsfair.eu/fairsfair-data-object-assessment-metrics-request-comments
 
-Generic Digital Object: 
+## Generic Digital Object: 
 
 1. Object is assigned a globally unique and persitent ID (FsF-F1-01D and FsF-F1-02D ) (exception: internal Digital Objects that does not need global resolution) 
 3. Includes authoritative data. FsF-R1.3-01M provides guidelines for domain agnostic core metadata (this needs to be aligned with DiSSCo) 
@@ -17,6 +17,7 @@ Generic Digital Object:
 14. Follows data standard of target research community (FsF-R1.3-01M) 
 15. Associated bit sequence is available in a format recommended by the research community (FsF-R1.3-02D) 
 
+## Digital Specimen 
 
 ```
 {
@@ -50,4 +51,55 @@ Generic Digital Object:
       ]
      
 }  
+```
+
+## Basic Image Object 
+```
+{
+  "id": "20.5000.1025/64ae0cf0dacb7bd20ba5",
+ "identifiers": [
+        {
+          "identifier": "https://hdl.handle.net/20.5000.1025/64ae0cf0dacb7bd20ba5",
+          "identifierType": "Handle"
+        } 
+        ],
+      "typeName": "ODStypeBIO-1901",
+  "authoritative": {
+    "publication_date": "2021-03-22T14:10:20.824Z", 
+    "publisher": "DiSSCo",
+    "summary": "Basic Image Object Pygmaepterys pointieri Garrigues",
+    "modified": "2021-03-22T14:10:22.824Z",
+    "images": [
+        {
+          "imageName": "hi-res",
+          "source": "#/payloads",
+          "mediaType": "image/jpeg", 
+          "imageWidth": "400",
+          "imageHeight": "280",
+          "xResolution": "",
+          "yResolution": "", 
+          "colorSpace": "",
+          "iccProfileName": "", 
+          "creator": "",
+          "created": "",
+          "project": "",
+          "license": "CC BY 4.0" 
+        }
+        ],
+    "payloads": [
+      {
+        "name": "hi-res",
+        "filename": "1427463506459UAeHPJw9jXoET1sF.jfif",
+        "mediaType": "image/jpeg",
+        "size": "15063"
+      }
+    ]
+  } ,
+"rightsList": [
+        {
+          "rights": "Creative Commons CC 4.0",
+          "rightsUri": "http://creativecommons.org/licenses/by/4.0/legalcode"
+        }
+      ]
+}
 ```
