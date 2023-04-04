@@ -18,10 +18,14 @@ PID lifecycles, similar to data life cycles, are important concepts to accommoda
 flowchart LR
 style A fill:#f9f,stroke:#333,stroke-width:4px
 style B fill:#0ff,stroke:#132,stroke-width:4px
-    A[DRAFT] -->|Publish PID| B(ACTIVE)
-    B --> C{Data Curation}
-    C --> Merge
-    C --> Split
-    B --> Archived
-    B --> Depracted
+    A[/Specimen Record/] -->|Data Ingestion| B(Create PID)
+    B --> C{Assign FDO Profile}
+    C --> D[FDO-Profile1]
+    D --> E{Assign Status}
+    E --> Reserved
+    E --> F[Active]
+    E --> DRAFT
+    F --> G{Data Curation}
+    G --> Archived
+    G --> Depracated
 ```
