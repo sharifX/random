@@ -14,8 +14,8 @@ PID lifecycles, similar to data life cycles, are important concepts to accommoda
 
 
 
-
-```flowchart LR
+```mermaid
+flowchart LR
 style A fill:#f9f,stroke:#333,stroke-width:4px
 style B fill:#0ff,stroke:#132,stroke-width:4px
     A[DRAFT] -->|Publish PID| B(ACTIVE)
