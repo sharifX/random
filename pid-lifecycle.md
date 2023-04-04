@@ -20,8 +20,7 @@ style A fill:#f9f,stroke:#333,stroke-width:4px
 style B fill:#0ff,stroke:#132,stroke-width:4px
     A[/Specimen Record/] -->|Data Ingestion| B(Create PID)
     B --> C{Assign FDO Profile}
-    C --> D[FDO-Profile1]
-    D --> E{Assign Status}
+    C --> E{Assign Status}
     E --> Reserved
     E --> F[Active]
     E --> DRAFT
