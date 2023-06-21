@@ -22,7 +22,14 @@ Example PID status:
 2. PID service is called.
 3. If PID string does not exist, the string is created (this is part of the PID "minting" and "registration" process. 
 4. Part of this step, also includes assigning a FDO Profile. This means FDO Record is created along with the PID. 
-6. Based on the workflow, a PID status is assigned. 
+6. Based on the workflow, a PID status is assigned.
+
+
+### Rollback and failure 
+
+1. Specimen record is ingested. 
+2. PID service is called.
+3. If there are any errors or external failures, we check the status and delete the PID string. 
 
 #### Reserved PID 
 Reserved status means that the PID is generated but it does not resolve. The use case here is a list of pregenerated IDs can be supplied to a workflow. 
