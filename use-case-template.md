@@ -7,8 +7,10 @@
 
 Describe here 
 
-## Actors: First Actor, Second Actor
+## Actors: 
+First Actor, Second Actor
 
+people or things that interact with the system. An actor could be an individual, a company, a team, or something else entirely.
 
 ## Goals 
 The results of an actor’s interactions with the system are your goals.
