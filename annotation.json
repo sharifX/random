@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-2020-12/schema#",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string" },
+    "motivation": {
+      "type": "string",
+      "enum": ["ods:adding", "oa:assessing", "oa:editing", "oa:commenting"]
+    },
+    "motivatedBy": { "type": "string" },
+    "target": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "selector": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "enum": ["fieldValueSelector"] },
+                "field": { "type": "string" }
+              },
+              "required": ["type", "field"]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "type": { "type": "string", "enum": ["classValueSelector"] },
+                "class": { "type": "string" }
+              },
+              "required": ["type", "class"]
+            }
+          ]
+        }
+      },
+      "required": ["id"]
+    },
+    "body": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "value": { "type": "array" },
+        "reference": { "type": "string" },
+        "score": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "required": ["type", "value"]
+    },
+    "creator": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "name": { "type": "string" },
+        "id": { "type": "string" }
+      },
+      "required": ["type", "name", "id"]
+    },
+    "created": { "type": "string" },
+    "generator": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "type": { "type": "string" }
+      },
+      "required": ["id", "name", "type"]
+    },
+    "generated": { "type": "string" },
+    "aggregateRating": {
+      "type": "object",
+      "properties": {
+        "type": { "type": "string" },
+        "ratingCount": { "type": "string" },
+        "ratingValue": { "type": "string" }
+      },
+      "required": ["type", "ratingCount", "ratingValue"]
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "motivation",
+    "motivatedBy",
+    "target",
+    "body",
+    "creator",
+    "created",
+    "generator",
+    "generated"
+  ]
+}
