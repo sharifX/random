@@ -88,8 +88,8 @@
       "type": "object",
       "properties": {
         "type": { "type": "string" },
-        "ratingCount": { "type": "string" },
-        "ratingValue": { "type": "string" }
+        "ratingCount": { "type": "number" },
+        "ratingValue": { "type": "number" }
       },
       "required": ["type", "ratingCount", "ratingValue"]
     }
