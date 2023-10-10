@@ -3,7 +3,8 @@
   "type": "object",
   "properties": {
     "id": { "type": "string" },
-    "type": { "type": "string" },
+    "type": { "const": "Annotation" },
+    "version": { "type": "integer" }, 
     "motivation": {
       "type": "string",
       "enum": ["ods:adding", "oa:assessing", "oa:editing", "oa:commenting"]
@@ -13,6 +14,7 @@
       "type": "object",
       "properties": {
         "id": { "type": "string" },
+        "type": { "type": "string" }, 
         "selector": {
           "oneOf": [
             {
@@ -34,7 +36,7 @@
             {
               "type": "object",
               "properties": {
-                "type": { "type": "string", "enum": ["FragmentSelector"] },
+                "type": { "const": "FragmentSelector" }, 
                 "hasROI": {
                   "type": "object",
                   "properties": {
@@ -52,7 +54,7 @@
           ]
         }
       },
-      "required": ["id"]
+      "required": ["id", "type"] 
     },
     "body": {
       "type": "object",
@@ -73,7 +75,7 @@
       },
       "required": ["type", "name", "id"]
     },
-    "created": { "type": "string" },
+    "created": { "type": "string", "format": "date" }, 
     "generator": {
       "type": "object",
       "properties": {
@@ -83,7 +85,7 @@
       },
       "required": ["id", "name", "type"]
     },
-    "generated": { "type": "string" },
+    "generated": { "type": "string" }, 
     "aggregateRating": {
       "type": "object",
       "properties": {
@@ -97,8 +99,8 @@
   "required": [
     "id",
     "type",
+    "version",
     "motivation",
-    "motivatedBy",
     "target",
     "body",
     "creator",
